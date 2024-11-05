@@ -46,7 +46,7 @@ def add_time(role):
     ])
 
     # Copy the role_display string to clipboard
-    #pyperclip.copy(role_display)
+    pyperclip.copy(role_display)
 
 # Layout of the app
 st.title("LOL Timer App")
