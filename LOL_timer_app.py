@@ -46,7 +46,7 @@ def add_time(role):
     ])
 
     # Copy the role_display string to clipboard
-    pyperclip.copy(role_display)
+    #pyperclip.copy(role_display)
 
 # Layout of the app
 st.title("LOL Timer App")
@@ -87,7 +87,7 @@ async def update_display():
             f"{role} {int(t.total_seconds()//60)}:{int(t.total_seconds()%60):02d}"
             for role, t in st.session_state.role_times.items()
         ])
-        role_display_placeholder.write(role_display)
+        role_display_placeholder.code(role_display)
         
         # Await a delay to prevent continuous execution
         await asyncio.sleep(1)
