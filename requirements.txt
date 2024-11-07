@@ -1,4 +1,1 @@
 streamlit
-clipboard
-pyperclip
-st-copy-to-clipboard
